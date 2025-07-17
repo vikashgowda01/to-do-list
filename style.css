@@ -1,0 +1,92 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center ;
+    min-height: 100vh;
+    background-color: #f9f9f9 ;
+}
+.container{
+    width: 90%;
+    border: 6px solid hwb(154 42% 42% / 0.631);
+    max-width: 500px;
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+form{
+    display: flex;
+    margin-bottom: 20px;
+}
+form input{
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ccc;
+}
+form button{
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+form button:hover{
+    background-color: #218838;
+}
+u1{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+li.task-name{
+    flex: 1;
+}
+li button{
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+li button.edit{
+    background-color: #ffc107;
+    color: #fff;
+}
+li button.delete{
+    background-color: #dc3545;
+    color: #fff;
+}
+li button:hover{
+    opacity: 0,9;
+}
+@media (max-width:500px){
+    form input{
+        font-size: 14px;
+    }
+    form bottom{
+        font-size: 14px;
+    }
+    li{
+        font-size: 14px;
+    }
+}
